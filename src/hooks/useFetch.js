@@ -16,7 +16,7 @@ function useFetch(service, id = null, options = {}) {
       setLoading(false);
     };
     fetchData();
-  }, [service, id]);
+  }, []);
 
   return [data, loading, error];
 }

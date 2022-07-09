@@ -1,8 +1,12 @@
-function Coin({ name, price, imgSrc }) {
+import Link from "next/link";
+
+function Coin({ id, name, price, imgSrc }) {
   return (
     <div>
       <div>
-        <img src={imgSrc}/>
+        <Link href={`coins/${id}`}>
+          <img src={imgSrc} />
+        </Link>
       </div>
       <h2>{name}</h2>
 
