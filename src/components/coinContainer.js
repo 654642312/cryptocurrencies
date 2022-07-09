@@ -12,7 +12,12 @@ function CoinContainer() {
   return (
     <div>
       {coins?.map((coin) => (
-        <Coin key={coin.id} name={coin.name} />
+        <Coin
+          key={coin.id}
+          name={coin.name}
+          price={coin.current_price}
+          imgSrc={coin.image}
+        />
       ))}
     </div>
   );
