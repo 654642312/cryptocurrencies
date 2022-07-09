@@ -1,4 +1,5 @@
 import Head from "next/head";
+import CoinContainer from "../components/coinContainer";
 import Container from "../components/container";
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
       </Head>
       <Container>
         <h1>Home</h1>
+        <CoinContainer />
       </Container>
     </>
   );
