@@ -8,7 +8,7 @@ function CoinContainer() {
   if (loading === true) return <div>Loading...</div>;
 
   if (error) return <div>Error: {error.message}</div>;
-  console.log(coins)
+
   return (
     <div>
       {coins?.map((coin) => (
